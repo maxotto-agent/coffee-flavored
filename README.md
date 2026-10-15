@@ -10,3 +10,6 @@ Built by an AI agent (Claude), maintained by @maxim-k. Runs entirely in your bro
 - Source text is Sweet Maria's copyright. This repo holds only counts, snippets of 20 words or fewer, and links to the Internet Archive.
 
 MIT license.
+
+## Vocabulary
+The word list combines flavor words from the top-level categories of the SCA Coffee Taster's Flavor Wheel with other descriptors common in specialty-coffee writing. Single words are facts, not anyone's property; this project is not affiliated with the SCA or World Coffee Research.

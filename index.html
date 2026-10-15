@@ -1,18 +1,24 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Is that flavor note old or new? Check coffee tasting notes against 2008–2011 reviews</title>
 <meta name="description" content="Paste a coffee's tasting notes and see which descriptors already appeared in Sweet Maria's reviews of 230 coffees from 2008–2011. Runs in your browser.">
-<style>body{font:16px/1.5 system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem}textarea{width:100%;height:6rem;font:inherit}td,th{padding:.3rem .5rem;border-bottom:1px solid #ddd;text-align:left;vertical-align:top}small,footer{color:#666;font-size:.8rem}footer{margin-top:3rem}</style></head><body>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem}textarea{width:100%;height:6rem;font:inherit}.b{font:inherit;font-size:.85rem;margin:0 .25rem .25rem 0;padding:.1rem .5rem;border:1px solid #bbb;border-radius:1rem;background:#fff;cursor:pointer}h3{font-size:.95rem;margin:.8rem 0 .3rem}td,th{padding:.3rem .5rem;border-bottom:1px solid #ddd;text-align:left;vertical-align:top}small,footer{color:#666;font-size:.8rem}footer{margin-top:3rem}</style></head><body>
 <h1>Is that tasting note new?</h1>
 <p>Paste the tasting notes from a coffee bag or listing. For each descriptor, see whether it already appeared in one retailer's published reviews from 2008–2011, how often, and the earliest example.</p>
 <textarea id="t" placeholder="e.g. blueberry, jasmine, strawberry jam, bubblegum"></textarea>
 <table id="r"></table>
+<h2>Or pick from the flavor wheel's words</h2>
+<p><small>Click a word to add it above, then read how often it appeared. Words are grouped under the top-level categories of the SCA Coffee Taster's Flavor Wheel. This page is not affiliated with the Specialty Coffee Association or World Coffee Research.</small></p>
+<div id="w"></div>
 <p><small>Source: <span id="n"></span> reviews from Sweet Maria's archive pages (crop years 2008–2011), read through the Internet Archive. One retailer's wording is not all of coffee: "no match" means not in this set, not "never said". Mentions of a flavor do not show that anything is added to a coffee. Nothing you type leaves your browser.</small></p>
 <footer>This application was autonomously scaffolded and deployed using generative software agents. Designed for lightweight, single-purpose utility. Curated and maintained by @maxim-k.</footer>
 <script>
 fetch('data.json').then(r=>r.json()).then(D=>{
 n.textContent=D.total;const T=D.terms,keys=Object.keys(T);
 const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const G={};keys.forEach(k=>{if(T[k].g)(G[T[k].g]=G[T[k].g]||[]).push(k)});
+w.innerHTML=Object.keys(G).map(g=>`<h3>${esc(g)}</h3>`+G[g].map(k=>`<button class="b" type="button" data-k="${esc(k)}">${esc(k)}${T[k].n?'':' (0)'}</button>`).join('')).join('');
+w.onclick=e=>{const k=e.target.dataset&&e.target.dataset.k;if(k){t.value=(t.value.trim()?t.value.trim()+', ':'')+k;run()}};
 function run(){const s=t.value.toLowerCase();const found=keys.filter(k=>new RegExp('\\b'+k.replace(/y$/,'(y|ies)')+'(s|es)?\\b').test(s));
-r.innerHTML=found.length?'<tr><th>Descriptor<th>Reviews<th>Earliest example</tr>'+found.map(k=>{const v=T[k];return v.n?`<tr><td>${esc(k)}<td>${v.n} of ${D.total}<td>${esc(v.coffee)} (${esc(v.crop)}): “…${esc(v.snip)}…” <a href="${esc(v.url)}">source</a>`:`<tr><td>${esc(k)}<td>0 of ${D.total}<td>No match in this set`}).join(''):(s.trim()?'<tr><td>No known descriptors found. Try single words like “strawberry”.':'')}
+r.innerHTML=found.length?'<tr><th>Descriptor<th>Reviews<th>Earliest example</tr>'+found.map(k=>{const v=T[k];return v.n?`<tr><td>${esc(k)}${v.g?`<br><small>${esc(v.g)}</small>`:''}<td>${v.n} of ${D.total}<td>${esc(v.coffee)} (${esc(v.crop)}): “…${esc(v.snip)}…” <a href="${esc(v.url)}">source</a>`:`<tr><td>${esc(k)}<td>0 of ${D.total}<td>No match in this set`}).join(''):(s.trim()?'<tr><td>No known descriptors found. Try single words like “strawberry”.':'')}
 t.oninput=run;});
 </script></body></html>
