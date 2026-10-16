@@ -1,0 +1,1140 @@
+[
+{
+"name": "Sour",
+"group": "Taste Basics",
+"sub": "",
+"p": 14,
+"d": "The bright, mouth-puckering taste of acids.",
+"m": [
+"sour"
+]
+},
+{
+"name": "Bitter",
+"group": "Taste Basics",
+"sub": "",
+"p": 14,
+"d": "The sharp, lingering taste you notice at the back of the tongue.",
+"m": [
+"bitter"
+]
+},
+{
+"name": "Salty",
+"group": "Taste Basics",
+"sub": "",
+"p": 15,
+"d": "A taste of salt, usually faint in coffee.",
+"m": [
+"salty"
+]
+},
+{
+"name": "Fruity",
+"group": "Fruity",
+"sub": "",
+"p": 16,
+"d": "Umbrella for fruit-like aromatics of any kind.",
+"m": [
+"fruit",
+"fruity"
+]
+},
+{
+"name": "Berry",
+"group": "Fruity",
+"sub": "Berry",
+"p": 16,
+"d": "Mixed berry character, without singling out one berry.",
+"m": [
+"berries",
+"berry"
+]
+},
+{
+"name": "Strawberry",
+"group": "Fruity",
+"sub": "Berry",
+"p": 16,
+"d": "Sweet red berry, fresh or jammy.",
+"m": [
+"strawberry"
+]
+},
+{
+"name": "Raspberry",
+"group": "Fruity",
+"sub": "Berry",
+"p": 17,
+"d": "Tart, perfumed red berry.",
+"m": [
+"raspberry"
+]
+},
+{
+"name": "Blueberry",
+"group": "Fruity",
+"sub": "Berry",
+"p": 17,
+"d": "Dark, sweet-tart berry with a juicy edge.",
+"m": [
+"blueberry"
+]
+},
+{
+"name": "Blackberry",
+"group": "Fruity",
+"sub": "Berry",
+"p": 17,
+"d": "Deep, slightly tart, jammy dark berry.",
+"m": [
+"blackberry"
+]
+},
+{
+"name": "Dried Fruit",
+"group": "Fruity",
+"sub": "Dried Fruit",
+"p": 17,
+"d": "Concentrated sweetness like fruit that has been dried.",
+"m": [
+"dried fruit"
+]
+},
+{
+"name": "Raisin",
+"group": "Fruity",
+"sub": "Dried Fruit",
+"p": 18,
+"d": "Sweet, dark, slightly wine-like dried grape.",
+"m": [
+"raisin",
+"raisins"
+]
+},
+{
+"name": "Prune",
+"group": "Fruity",
+"sub": "Dried Fruit",
+"p": 18,
+"d": "Heavy, dark dried plum.",
+"m": [
+"plum",
+"prune",
+"prunes"
+]
+},
+{
+"name": "Other Fruit",
+"group": "Fruity",
+"sub": "Other Fruit",
+"p": 18,
+"d": "Fruit notes not covered by the berry, dried or citrus groups.",
+"m": [
+"other fruit"
+]
+},
+{
+"name": "Apple",
+"group": "Fruity",
+"sub": "Other Fruit",
+"p": 19,
+"d": "Crisp, lightly sweet orchard fruit.",
+"m": [
+"apple"
+]
+},
+{
+"name": "Pear",
+"group": "Fruity",
+"sub": "Other Fruit",
+"p": 19,
+"d": "Soft, mild, juicy and a little grainy.",
+"m": [
+"pear"
+]
+},
+{
+"name": "Peach",
+"group": "Fruity",
+"sub": "Other Fruit",
+"p": 19,
+"d": "Soft, fuzzy, honeyed stone fruit.",
+"m": [
+"peach",
+"stone fruit"
+]
+},
+{
+"name": "Grape",
+"group": "Fruity",
+"sub": "Other Fruit",
+"p": 19,
+"d": "Sweet juice-like fruit note.",
+"m": [
+"grape"
+]
+},
+{
+"name": "Cherry",
+"group": "Fruity",
+"sub": "Other Fruit",
+"p": 20,
+"d": "Sweet-tart red stone fruit.",
+"m": [
+"cherry"
+]
+},
+{
+"name": "Pomegranate",
+"group": "Fruity",
+"sub": "Other Fruit",
+"p": 20,
+"d": "Tart, tannic red fruit with a juicy snap.",
+"m": [
+"pomegranate"
+]
+},
+{
+"name": "Coconut",
+"group": "Fruity",
+"sub": "Other Fruit",
+"p": 20,
+"d": "Creamy, sweet, tropical, like the flesh or milk.",
+"m": [
+"coconut"
+]
+},
+{
+"name": "Pineapple",
+"group": "Fruity",
+"sub": "Other Fruit",
+"p": 20,
+"d": "Sharp, sweet tropical fruit.",
+"m": [
+"pineapple"
+]
+},
+{
+"name": "Citrus Fruit",
+"group": "Fruity",
+"sub": "Citrus Fruit",
+"p": 21,
+"d": "Umbrella for the citrus family.",
+"m": [
+"citrus",
+"citrus fruit"
+]
+},
+{
+"name": "Lemon",
+"group": "Fruity",
+"sub": "Citrus Fruit",
+"p": 21,
+"d": "Sharp, clean, sour citrus.",
+"m": [
+"lemon"
+]
+},
+{
+"name": "Grapefruit",
+"group": "Fruity",
+"sub": "Citrus Fruit",
+"p": 21,
+"d": "Bitter-sweet, tart citrus.",
+"m": [
+"grapefruit"
+]
+},
+{
+"name": "Orange",
+"group": "Fruity",
+"sub": "Citrus Fruit",
+"p": 22,
+"d": "Sweet, rounder citrus.",
+"m": [
+"orange"
+]
+},
+{
+"name": "Lime",
+"group": "Fruity",
+"sub": "Citrus Fruit",
+"p": 22,
+"d": "Sharp, green, zesty citrus.",
+"m": [
+"lime"
+]
+},
+{
+"name": "Sour Aromatics",
+"group": "Sour/Acid",
+"sub": "",
+"p": 23,
+"d": "Smells associated with sourness rather than the taste itself.",
+"m": [
+"sour aromatics"
+]
+},
+{
+"name": "Acetic Acid",
+"group": "Sour/Acid",
+"sub": "",
+"p": 23,
+"d": "Vinegar-like sharpness.",
+"m": [
+"acetic acid",
+"vinegar"
+]
+},
+{
+"name": "Butyric Acid",
+"group": "Sour/Acid",
+"sub": "",
+"p": 24,
+"d": "Pungent, rancid-butter or cheesy smell.",
+"m": [
+"butyric acid"
+]
+},
+{
+"name": "Isovaleric Acid",
+"group": "Sour/Acid",
+"sub": "",
+"p": 24,
+"d": "Sweaty, cheesy smell.",
+"m": [
+"isovaleric acid"
+]
+},
+{
+"name": "Citric Acid",
+"group": "Sour/Acid",
+"sub": "",
+"p": 24,
+"d": "The sourness of citrus.",
+"m": [
+"citric acid"
+]
+},
+{
+"name": "Malic Acid",
+"group": "Sour/Acid",
+"sub": "",
+"p": 25,
+"d": "The tart, green-apple kind of sourness.",
+"m": [
+"malic acid"
+]
+},
+{
+"name": "Alcohol",
+"group": "Alcohol/Fermented",
+"sub": "",
+"p": 26,
+"d": "Spirit-like aroma that has a solvent edge.",
+"m": [
+"alcohol"
+]
+},
+{
+"name": "Whiskey",
+"group": "Alcohol/Fermented",
+"sub": "",
+"p": 26,
+"d": "Warm, aged-spirit aroma.",
+"m": [
+"whiskey",
+"whisky"
+]
+},
+{
+"name": "Winey",
+"group": "Alcohol/Fermented",
+"sub": "",
+"p": 26,
+"d": "Aroma of wine, often with some sourness.",
+"m": [
+"wine",
+"winey"
+]
+},
+{
+"name": "Fermented",
+"group": "Alcohol/Fermented",
+"sub": "",
+"p": 26,
+"d": "Aroma of fruit or grain that has begun to ferment.",
+"m": [
+"fermented"
+]
+},
+{
+"name": "Overripe/Near fermented",
+"group": "Alcohol/Fermented",
+"sub": "",
+"p": 27,
+"d": "Fruit past its best, sweet and verging on fermenting.",
+"m": [
+"overripe",
+"overripe/near fermented"
+]
+},
+{
+"name": "Olive Oil",
+"group": "Green/Vegetative",
+"sub": "",
+"p": 28,
+"d": "The green, fatty aroma of olive oil.",
+"m": [
+"olive oil"
+]
+},
+{
+"name": "Raw",
+"group": "Green/Vegetative",
+"sub": "",
+"p": 28,
+"d": "Uncooked, bean-like and flat.",
+"m": [
+"raw"
+]
+},
+{
+"name": "Under\u2013ripe",
+"group": "Green/Vegetative",
+"sub": "",
+"p": 28,
+"d": "Sharp and green like fruit picked too early.",
+"m": [
+"under ripe",
+"under-ripe",
+"underripe"
+]
+},
+{
+"name": "Peapod",
+"group": "Green/Vegetative",
+"sub": "",
+"p": 28,
+"d": "The fresh green aroma of fresh pea pods.",
+"m": [
+"peapod"
+]
+},
+{
+"name": "Green",
+"group": "Green/Vegetative",
+"sub": "",
+"p": 29,
+"d": "Fresh-cut green plant.",
+"m": [
+"green"
+]
+},
+{
+"name": "Fresh",
+"group": "Green/Vegetative",
+"sub": "",
+"p": 29,
+"d": "Lively, just-picked quality.",
+"m": [
+"fresh"
+]
+},
+{
+"name": "Dark Green",
+"group": "Green/Vegetative",
+"sub": "",
+"p": 29,
+"d": "Heavy, leafy green, like cooked greens.",
+"m": [
+"dark green"
+]
+},
+{
+"name": "Vegetative",
+"group": "Green/Vegetative",
+"sub": "",
+"p": 30,
+"d": "Cooked or raw vegetable-like.",
+"m": [
+"vegetal",
+"vegetative"
+]
+},
+{
+"name": "Hay-like",
+"group": "Green/Vegetative",
+"sub": "",
+"p": 30,
+"d": "Dry grass, straw.",
+"m": [
+"hay",
+"hay-like"
+]
+},
+{
+"name": "Herb-like",
+"group": "Green/Vegetative",
+"sub": "",
+"p": 30,
+"d": "Green herbs such as parsley or dill.",
+"m": [
+"herb",
+"herb-like",
+"herbal"
+]
+},
+{
+"name": "Beany",
+"group": "Green/Vegetative",
+"sub": "",
+"p": 30,
+"d": "Smells of beans or legumes.",
+"m": [
+"beans",
+"beany"
+]
+},
+{
+"name": "Stale",
+"group": "Stale/Papery",
+"sub": "",
+"p": 31,
+"d": "Flat and old, as if left out too long.",
+"m": [
+"stale"
+]
+},
+{
+"name": "Papery",
+"group": "Stale/Papery",
+"sub": "",
+"p": 31,
+"d": "Dry paper smell.",
+"m": [
+"paper",
+"papery"
+]
+},
+{
+"name": "Cardboard",
+"group": "Stale/Papery",
+"sub": "",
+"p": 31,
+"d": "Wet or dry cardboard smell.",
+"m": [
+"cardboard"
+]
+},
+{
+"name": "Musty/Earthy",
+"group": "Earthy",
+"sub": "",
+"p": 32,
+"d": "The smell of damp soil.",
+"m": [
+"earth",
+"earthy",
+"musty/earthy"
+]
+},
+{
+"name": "Musty/Dusty",
+"group": "Earthy",
+"sub": "",
+"p": 32,
+"d": "Dry, dusty, old-room smell.",
+"m": [
+"dusty",
+"musty",
+"musty/dusty"
+]
+},
+{
+"name": "Moldy/Damp",
+"group": "Earthy",
+"sub": "",
+"p": 33,
+"d": "Damp, mold-like smell.",
+"m": [
+"damp",
+"moldy",
+"moldy/damp",
+"mouldy"
+]
+},
+{
+"name": "Phenolic",
+"group": "Earthy",
+"sub": "",
+"p": 33,
+"d": "Medicinal, smoky-chemical notes.",
+"m": [
+"phenolic"
+]
+},
+{
+"name": "Animalic",
+"group": "Earthy",
+"sub": "",
+"p": 33,
+"d": "Smells of animals, leather or fur.",
+"m": [
+"animalic",
+"leather"
+]
+},
+{
+"name": "Meaty/Brothy",
+"group": "Earthy",
+"sub": "",
+"p": 33,
+"d": "Savory, like broth or cooked meat.",
+"m": [
+"brothy",
+"meaty",
+"meaty/brothy"
+]
+},
+{
+"name": "Woody",
+"group": "Earthy",
+"sub": "",
+"p": 32,
+"d": "Aroma of dry wood.",
+"m": [
+"wood",
+"woody"
+]
+},
+{
+"name": "Medicinal",
+"group": "Chemical",
+"sub": "",
+"p": 34,
+"d": "Antiseptic, like a first-aid cabinet.",
+"m": [
+"medicinal"
+]
+},
+{
+"name": "Rubber",
+"group": "Chemical",
+"sub": "",
+"p": 34,
+"d": "Smell of rubber or tires.",
+"m": [
+"rubber"
+]
+},
+{
+"name": "Petroleum",
+"group": "Chemical",
+"sub": "",
+"p": 35,
+"d": "Fuel or oil aroma.",
+"m": [
+"petroleum"
+]
+},
+{
+"name": "Skunky",
+"group": "Chemical",
+"sub": "",
+"p": 35,
+"d": "A sharp, sulfurous smell.",
+"m": [
+"skunk",
+"skunky"
+]
+},
+{
+"name": "Tobacco",
+"group": "Roasted",
+"sub": "",
+"p": 36,
+"d": "Dry, sweet tobacco leaf.",
+"m": [
+"tobacco"
+]
+},
+{
+"name": "Pipe Tobacco",
+"group": "Roasted",
+"sub": "",
+"p": 36,
+"d": "Sweeter, pipe-smoke tobacco.",
+"m": [
+"pipe tobacco"
+]
+},
+{
+"name": "Acrid",
+"group": "Roasted",
+"sub": "",
+"p": 36,
+"d": "Harsh, irritating burnt smell.",
+"m": [
+"acrid"
+]
+},
+{
+"name": "Ashy",
+"group": "Roasted",
+"sub": "",
+"p": 37,
+"d": "Ash-like, dry, burnt.",
+"m": [
+"ash",
+"ashy"
+]
+},
+{
+"name": "Burnt",
+"group": "Roasted",
+"sub": "",
+"p": 37,
+"d": "Charred, over-roasted.",
+"m": [
+"burnt"
+]
+},
+{
+"name": "Smoky",
+"group": "Roasted",
+"sub": "",
+"p": 37,
+"d": "Smoke aroma.",
+"m": [
+"smoke",
+"smoky"
+]
+},
+{
+"name": "Roasted",
+"group": "Roasted",
+"sub": "",
+"p": 38,
+"d": "Roast aroma in general.",
+"m": [
+"roasted"
+]
+},
+{
+"name": "Brown, Roast",
+"group": "Roasted",
+"sub": "",
+"p": 38,
+"d": "The sweet, browned note of a medium roast.",
+"m": [
+"brown roast",
+"brown, roast"
+]
+},
+{
+"name": "Grain",
+"group": "Cereal",
+"sub": "",
+"p": 39,
+"d": "Raw or cooked cereal.",
+"m": [
+"grain",
+"grains"
+]
+},
+{
+"name": "Malt",
+"group": "Cereal",
+"sub": "",
+"p": 39,
+"d": "Sweet, toasty malted grain.",
+"m": [
+"malt"
+]
+},
+{
+"name": "Pungent",
+"group": "Spices",
+"sub": "",
+"p": 40,
+"d": "Sharp, prickling spice sensation.",
+"m": [
+"pungent"
+]
+},
+{
+"name": "Pepper",
+"group": "Spices",
+"sub": "",
+"p": 40,
+"d": "Black or white pepper.",
+"m": [
+"pepper"
+]
+},
+{
+"name": "Anise",
+"group": "Spices",
+"sub": "",
+"p": 40,
+"d": "Licorice-like spice.",
+"m": [
+"anise",
+"licorice",
+"liquorice"
+]
+},
+{
+"name": "Nutmeg",
+"group": "Spices",
+"sub": "",
+"p": 40,
+"d": "Warm, sweet baking spice.",
+"m": [
+"nutmeg"
+]
+},
+{
+"name": "Brown Spice",
+"group": "Spices",
+"sub": "",
+"p": 41,
+"d": "Warm baking spices as a group.",
+"m": [
+"brown spice"
+]
+},
+{
+"name": "Cinnamon",
+"group": "Spices",
+"sub": "",
+"p": 41,
+"d": "Sweet, woody spice.",
+"m": [
+"cinnamon"
+]
+},
+{
+"name": "Clove",
+"group": "Spices",
+"sub": "",
+"p": 41,
+"d": "Sweet, numbing, medicinal spice.",
+"m": [
+"clove",
+"cloves"
+]
+},
+{
+"name": "Nutty",
+"group": "Nutty",
+"sub": "",
+"p": 42,
+"d": "Nut-like in general.",
+"m": [
+"nuts",
+"nutty"
+]
+},
+{
+"name": "Almond",
+"group": "Nutty",
+"sub": "",
+"p": 42,
+"d": "Sweet, light nut.",
+"m": [
+"almond"
+]
+},
+{
+"name": "Hazelnut",
+"group": "Nutty",
+"sub": "",
+"p": 42,
+"d": "Rich, buttery, toasted nut.",
+"m": [
+"hazelnut"
+]
+},
+{
+"name": "Peanuts",
+"group": "Nutty",
+"sub": "",
+"p": 43,
+"d": "Roasted peanut character.",
+"m": [
+"peanut",
+"peanuts"
+]
+},
+{
+"name": "Chocolate",
+"group": "Cocoa",
+"sub": "",
+"p": 44,
+"d": "Milk or sweet chocolate.",
+"m": [
+"chocolate"
+]
+},
+{
+"name": "Cocoa",
+"group": "Cocoa",
+"sub": "",
+"p": 44,
+"d": "Unsweetened cocoa powder.",
+"m": [
+"cacao",
+"cocoa"
+]
+},
+{
+"name": "Dark Chocolate",
+"group": "Cocoa",
+"sub": "",
+"p": 44,
+"d": "Bitter, intense chocolate.",
+"m": [
+"dark chocolate"
+]
+},
+{
+"name": "Sweet",
+"group": "Sweet",
+"sub": "",
+"p": 45,
+"d": "Umbrella for sweet-smelling notes.",
+"m": [
+"sweet",
+"sweetness"
+]
+},
+{
+"name": "Molasses",
+"group": "Sweet",
+"sub": "",
+"p": 45,
+"d": "Dark, treacly, slightly bitter sugar.",
+"m": [
+"molasses"
+]
+},
+{
+"name": "Maple Syrup",
+"group": "Sweet",
+"sub": "",
+"p": 45,
+"d": "Sweet, woody syrup.",
+"m": [
+"maple",
+"maple syrup"
+]
+},
+{
+"name": "Brown Sugar",
+"group": "Sweet",
+"sub": "",
+"p": 45,
+"d": "Soft, caramelly sugar.",
+"m": [
+"brown sugar"
+]
+},
+{
+"name": "Caramelized",
+"group": "Sweet",
+"sub": "",
+"p": 46,
+"d": "Cooked sugar, from light to dark.",
+"m": [
+"caramel",
+"caramelized"
+]
+},
+{
+"name": "Honey",
+"group": "Sweet",
+"sub": "",
+"p": 46,
+"d": "Floral, golden sweetness.",
+"m": [
+"honey"
+]
+},
+{
+"name": "Vanilla",
+"group": "Sweet",
+"sub": "",
+"p": 46,
+"d": "Creamy, sweet bean.",
+"m": [
+"vanilla"
+]
+},
+{
+"name": "Vanillin",
+"group": "Sweet",
+"sub": "",
+"p": 47,
+"d": "The single compound behind vanilla, sharper and simpler.",
+"m": [
+"vanillin"
+]
+},
+{
+"name": "Sweet Aromatics",
+"group": "Sweet",
+"sub": "",
+"p": 47,
+"d": "Sweet smells that are not tied to one food.",
+"m": [
+"sweet aromatics"
+]
+},
+{
+"name": "Overall Sweet",
+"group": "Sweet",
+"sub": "",
+"p": 47,
+"d": "The overall impression of sweetness.",
+"m": [
+"overall sweet"
+]
+},
+{
+"name": "Floral",
+"group": "Floral",
+"sub": "",
+"p": 48,
+"d": "Flower-like, in general.",
+"m": [
+"floral",
+"flowers"
+]
+},
+{
+"name": "Rose",
+"group": "Floral",
+"sub": "",
+"p": 48,
+"d": "Perfumed rose petal.",
+"m": [
+"rose",
+"roses"
+]
+},
+{
+"name": "Jasmine",
+"group": "Floral",
+"sub": "",
+"p": 48,
+"d": "Heady white flower.",
+"m": [
+"jasmine"
+]
+},
+{
+"name": "Chamomile",
+"group": "Floral",
+"sub": "",
+"p": 49,
+"d": "Gentle, apple-like herbal flower.",
+"m": [
+"chamomile"
+]
+},
+{
+"name": "Black Tea",
+"group": "Floral",
+"sub": "",
+"p": 49,
+"d": "Dry, tannic leaf tea.",
+"m": [
+"black tea"
+]
+},
+{
+"name": "Overall Impact",
+"group": "Amplitude",
+"sub": "",
+"p": 50,
+"d": "How strong the whole experience is.",
+"m": [
+"overall impact"
+]
+},
+{
+"name": "Blended",
+"group": "Amplitude",
+"sub": "",
+"p": 50,
+"d": "How well the flavors merge into one.",
+"m": [
+"blended"
+]
+},
+{
+"name": "Longevity",
+"group": "Amplitude",
+"sub": "",
+"p": 51,
+"d": "How long the flavor lasts after swallowing.",
+"m": [
+"longevity"
+]
+},
+{
+"name": "Body/Fullness",
+"group": "Amplitude",
+"sub": "",
+"p": 51,
+"d": "The weight and roundness of the cup.",
+"m": [
+"body",
+"body/fullness",
+"fullness"
+]
+},
+{
+"name": "Mouth Drying",
+"group": "Mouthfeel",
+"sub": "",
+"p": 53,
+"d": "A dry, puckering feeling in the mouth.",
+"m": [
+"mouth drying"
+]
+},
+{
+"name": "Thickness",
+"group": "Mouthfeel",
+"sub": "",
+"p": 53,
+"d": "How viscous the coffee feels.",
+"m": [
+"thickness"
+]
+},
+{
+"name": "Metallic",
+"group": "Mouthfeel",
+"sub": "",
+"p": 53,
+"d": "A feel or taste like metal.",
+"m": [
+"metallic"
+]
+},
+{
+"name": "Oily",
+"group": "Mouthfeel",
+"sub": "",
+"p": 53,
+"d": "Slick, coating feel.",
+"m": [
+"oily"
+]
+}
+]

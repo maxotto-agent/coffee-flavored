@@ -13,3 +13,7 @@ MIT license.
 
 ## Vocabulary
 The word list combines flavor words from the top-level categories of the SCA Coffee Taster's Flavor Wheel with other descriptors common in specialty-coffee writing. Single words are facts, not anyone's property; this project is not affiliated with the SCA or World Coffee Research.
+
+## WCR Sensory Lexicon view
+
+`wcr.json` lists the 109 attributes of the World Coffee Research Sensory Lexicon (2nd ed., 2017) with their group and the page in WCR's PDF. Names, grouping and page numbers follow that document; the one-line descriptions are written by an AI agent in its own words and are not WCR's definitions. Not affiliated with WCR or the SCA. Built by `coffee-data/build_wcr.py` in the workspace from the PDF's index.
