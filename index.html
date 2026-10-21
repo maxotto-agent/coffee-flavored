@@ -1,26 +1,49 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Is that flavor note old or new? Check coffee tasting notes against 2008–2011 reviews</title>
 <meta name="description" content="Paste a coffee's tasting notes and see which descriptors already appeared in Sweet Maria's reviews of 230 coffees from 2008–2011. Runs in your browser.">
-<style>body{font:16px/1.5 system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem}textarea{width:100%;height:6rem;font:inherit}.b{font:inherit;font-size:.85rem;margin:0 .25rem .25rem 0;padding:.1rem .5rem;border:1px solid #bbb;border-radius:1rem;background:#fff;cursor:pointer}h3{font-size:.95rem;margin:.8rem 0 .3rem}td,th{padding:.3rem .5rem;border-bottom:1px solid #ddd;text-align:left;vertical-align:top}small,footer{color:#666;font-size:.8rem}footer{margin-top:3rem}</style></head><body>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;color:#222}
+h1{margin:.2rem 0}h2{font-size:1.1rem;margin:0}textarea{width:100%;height:5rem;font:inherit;box-sizing:border-box;padding:.5rem}
+.lead{color:#444;margin:.3rem 0 1rem}
+.ex{font-size:.9rem;color:#555;margin:.3rem 0 1rem}.ex button{font:inherit;font-size:.85rem;border:0;background:none;color:#05c;text-decoration:underline;cursor:pointer;padding:0 .3rem}
+.b{font:inherit;font-size:.85rem;margin:0 .25rem .25rem 0;padding:.1rem .5rem;border:1px solid #bbb;border-radius:1rem;background:#fff;cursor:pointer}
+h3{font-size:.95rem;margin:.8rem 0 .3rem}
+#sum{font-weight:600;margin:1rem 0 .5rem}
+.card{border:1px solid #ddd;border-left-width:6px;border-radius:.4rem;padding:.6rem .8rem;margin:.5rem 0}
+.card.common{border-left-color:#2a7}.card.rare{border-left-color:#c80}.card.none{border-left-color:#888}
+.card .top{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.tag{font-size:.8rem;font-weight:600}.bar{height:.4rem;background:#eee;border-radius:.2rem;margin:.3rem 0}.bar i{display:block;height:100%;background:#2a7;border-radius:.2rem}
+.card p{margin:.3rem 0 0;font-size:.9rem;color:#444}
+.note{font-size:.85rem;color:#555;background:#f6f6f6;border-radius:.4rem;padding:.5rem .8rem;margin:1rem 0}
+details{border-top:1px solid #ddd;padding:.7rem 0}summary{cursor:pointer;font-weight:600}
+td,th{padding:.3rem .5rem;border-bottom:1px solid #ddd;text-align:left;vertical-align:top;font-size:.9rem}
+small,footer{color:#666;font-size:.8rem}footer{margin-top:3rem}
+</style></head><body>
 <h1>Is that tasting note new?</h1>
-<p>Paste the tasting notes from a coffee bag or listing. For each descriptor, see whether it already appeared in one retailer's published reviews from 2008–2011, how often, and the earliest example.</p>
-<textarea id="t" placeholder="e.g. blueberry, jasmine, strawberry jam, bubblegum"></textarea>
-<table id="r"></table>
-<h2 id="lx">In the WCR Sensory Lexicon</h2>
-<p><small>Notes that match an attribute of the World Coffee Research Sensory Lexicon. The page number points into WCR's own PDF, where the official definition and reference standard are.</small></p>
-<table id="x"></table>
-<h2>Or pick from the flavor wheel's words</h2>
-<p><small>Click a word to add it above, then read how often it appeared. Words are grouped under the top-level categories of the SCA Coffee Taster's Flavor Wheel. This page is not affiliated with the Specialty Coffee Association or World Coffee Research.</small></p>
-<div id="w"></div>
-<h2>Browse the WCR Sensory Lexicon</h2>
-<p><input id="f" type="search" placeholder="Filter the 109 attributes" style="width:100%;font:inherit"></p>
+<p class="lead">Paste the tasting notes from a coffee bag or listing. You'll see, note by note, whether each one already showed up in a retailer's published reviews from 2008–2011.</p>
+<textarea id="t" placeholder="e.g. blueberry, jasmine, strawberry jam, bubblegum" aria-label="Tasting notes"></textarea>
+<p class="ex">No bag handy? Try: <button type="button" data-ex="chocolate, caramel, almond">classic</button><button type="button" data-ex="blueberry, jasmine, strawberry jam, bubblegum">fruity</button><button type="button" data-ex="cinnamon, mango, red wine, cherry">mixed</button></p>
+<div id="out" aria-live="polite">
+<div id="sum"></div>
+<div id="r"></div>
+<div id="xw" hidden><h3>Matches in the WCR sensory lexicon</h3>
+<p><small>The page number points into WCR's own PDF, where the official definition and reference standard are.</small></p>
+<table id="x"></table></div>
+<div class="note" id="caveat" hidden><b>How to read this.</b> One retailer's wording is not all of coffee: "no match" means not in this set of <span id="n"></span> reviews, which is different from "never said." A note with no earlier match does not show that anything was added to a coffee; new varieties and processing methods can create new flavors. Nothing you type leaves your browser.</div>
+</div>
+<details id="dw"><summary>Browse flavor-wheel words</summary>
+<p><small>Click a word to add it to the box and see how often it appeared. Words are grouped under the top-level categories of the SCA Coffee Taster's Flavor Wheel. This page is not affiliated with the Specialty Coffee Association or World Coffee Research.</small></p>
+<div id="w"></div></details>
+<details><summary>Browse the WCR Sensory Lexicon</summary>
+<p><input id="f" type="search" placeholder="Filter the 109 attributes" style="width:100%;font:inherit;box-sizing:border-box"></p>
 <div id="L"></div>
-<p><small>Attribute names, grouping and page numbers follow the World Coffee Research Sensory Lexicon, 2nd edition (2017), <a href="https://worldcoffeeresearch.org/resources/sensory-lexicon">free from WCR</a>. The one-line descriptions here are my own and are not WCR's definitions; for the official definition and reference products, open the PDF at the page shown. Not affiliated with WCR or the SCA.</small></p>
-<p><small>Source: <span id="n"></span> reviews from Sweet Maria's archive pages (crop years 2008–2011), read through the Internet Archive. One retailer's wording is not all of coffee: "no match" means not in this set, not "never said". Mentions of a flavor do not show that anything is added to a coffee. Nothing you type leaves your browser.</small></p>
+<p><small>Attribute names, grouping and page numbers follow the World Coffee Research Sensory Lexicon, second edition (2017), <a href="https://worldcoffeeresearch.org/resources/sensory-lexicon">free from WCR</a>. The one-line descriptions here are my own and are not WCR's definitions; for the official definition and reference products, open the PDF at the page shown. Not affiliated with WCR or the SCA.</small></p></details>
+<details><summary>About the data</summary>
+<p><small>Source: <span id="n2"></span> reviews from Sweet Maria's archive pages (crop years 2008–2011), read through the Internet Archive. Counts are the number of reviews that mention a descriptor. Labels: <b>common</b> = in at least 5% of reviews; <b>rare</b> = in fewer; <b>no match</b> = in none.</small></p></details>
 <footer>This application was autonomously scaffolded and deployed using generative software agents. Designed for lightweight, single-purpose utility. Curated and maintained by @maxim-k.</footer>
 <script>
 Promise.all([fetch('data.json').then(r=>r.json()),fetch('wcr.json').then(r=>r.json())]).then(([D,W])=>{
-n.textContent=D.total;const T=D.terms,keys=Object.keys(T);
+n.textContent=D.total;n2.textContent=D.total;document.querySelectorAll('[data-ex]').forEach(b=>b.onclick=()=>{t.value=b.dataset.ex;run()});const T=D.terms,keys=Object.keys(T);
 const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const G={};keys.forEach(k=>{if(T[k].g)(G[T[k].g]=G[T[k].g]||[]).push(k)});
 w.innerHTML=Object.keys(G).map(g=>`<h3>${esc(g)}</h3>`+G[g].map(k=>`<button class="b" type="button" data-k="${esc(k)}">${esc(k)}${T[k].n?'':' (0)'}</button>`).join('')).join('');
@@ -29,11 +52,15 @@ const PDF='https://worldcoffeeresearch.org/download/bf904452-fc8c-488f-b591-c0b2
 const pl=p=>`<a href="${PDF}#page=${p}">WCR p. ${p}</a>`;
 const wre=W.map(a=>new RegExp('(^|[^a-z])('+a.m.map(m=>m.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')(s|es)?(?![a-z])'));
 function runX(){const s=t.value.toLowerCase();const f=W.filter((a,i)=>wre[i].test(s));
-x.innerHTML=f.length?'<tr><th>Attribute<th>Where<th>Meaning (my words)'+f.map(a=>`<tr><td>${esc(a.name)}<td>${esc(a.group)}${a.sub?' › '+esc(a.sub):''}<br>${pl(a.p)}<td>${esc(a.d)}`).join(''):(s.trim()?'<tr><td>No WCR lexicon attribute found in these notes.':'')}
+xw.hidden=!f.length;x.innerHTML=f.length?'<tr><th>Attribute<th>Where<th>Meaning (my words)'+f.map(a=>`<tr><td>${esc(a.name)}<td>${esc(a.group)}${a.sub?' › '+esc(a.sub):''}<br>${pl(a.p)}<td>${esc(a.d)}`).join(''):(s.trim()?'<tr><td>No WCR lexicon attribute found in these notes.':'')}
 function showL(){const q=f.value.toLowerCase().trim();const gs={};W.filter(a=>!q||(a.name+' '+a.group+' '+a.sub+' '+a.d).toLowerCase().includes(q)).forEach(a=>(gs[a.group]=gs[a.group]||[]).push(a));
 L.innerHTML=Object.keys(gs).map(g=>`<h3>${esc(g)}</h3>`+gs[g].map(a=>`<div><b>${esc(a.name)}</b> ${a.sub&&a.sub!==a.name?'<small>('+esc(a.sub)+')</small> ':''}${pl(a.p)}<br><small>${esc(a.d)}</small></div>`).join('')).join('')||'<p>No match.</p>'}
 f.oninput=showL;showL();
 function run(){runX();const s=t.value.toLowerCase();const found=keys.filter(k=>new RegExp('\\b'+k.replace(/y$/,'(y|ies)')+'(s|es)?\\b').test(s));
-r.innerHTML=found.length?'<tr><th>Descriptor<th>Reviews<th>Earliest example</tr>'+found.map(k=>{const v=T[k];return v.n?`<tr><td>${esc(k)}${v.g?`<br><small>${esc(v.g)}</small>`:''}<td>${v.n} of ${D.total}<td>${esc(v.coffee)} (${esc(v.crop)}): “…${esc(v.snip)}…” <a href="${esc(v.url)}">source</a>`:`<tr><td>${esc(k)}<td>0 of ${D.total}<td>No match in this set`}).join(''):(s.trim()?'<tr><td>No known descriptors found. Try single words like “strawberry”.':'')}
+const hit=found.filter(k=>T[k].n),miss=found.length-hit.length;
+sum.textContent=found.length?`${hit.length} of ${found.length} note${found.length>1?'s':''} appeared in the 2008–2011 reviews${miss?`; ${miss} did not`:''}.`:(s.trim()?'No known descriptors found. Try single words like “strawberry”.':'');
+r.innerHTML=found.map(k=>{const v=T[k],p=v.n/D.total*100;const c=!v.n?'none':p>=5?'common':'rare';const lab={none:'No match',common:'Common',rare:'Rare'}[c];
+return `<div class="card ${c}"><div class="top"><h2>${esc(k)}</h2><span class="tag">${lab} · ${v.n} of ${D.total} reviews</span></div>`+(v.n?`<div class="bar"><i style="width:${Math.max(p,1.5)}%"></i></div><p>Earliest example: ${esc(v.coffee)} (${esc(v.crop)}): “…${esc(v.snip)}…” <a href="${esc(v.url)}">source</a></p>`:`<p>Not found in this set.${v.g?' Flavor-wheel group: '+esc(v.g)+'.':''}</p>`)+'</div>'}).join('');
+caveat.hidden=!found.length}
 t.oninput=run;});
 </script></body></html>
